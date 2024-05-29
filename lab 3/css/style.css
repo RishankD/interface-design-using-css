@@ -1,0 +1,88 @@
+body 
+{
+    display: grid;
+    grid-template-columns: 30% 30% 30% 30%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "masthead masthead masthead masthead"
+    "main main main main"
+    /* "content2 content2 content2 content2" */
+    "footer footer footer footer";
+}
+
+header
+{
+    display: grid;
+    display: flex;
+    grid-area: header;
+    background-color: #b5cbcb;
+}
+
+header div
+{
+    width: 50%;
+    text-align: center;
+    background-color: #cd9090;
+}
+
+header nav
+{
+    width: 50%;
+    text-align: center;
+    /* background-color: blue; */
+}
+
+.masthead
+{
+    display: grid;
+    display: flex;
+    align-items: center;
+    grid-area: masthead;
+    justify-self: center;
+    background-color: #de8011;
+    text-align: center;
+    /* padding: 3em; */
+    height: 5em;
+    width: 100%;
+}
+
+
+
+section.R3 div
+{
+
+    width: 33.33%;
+    background-color: #2b4a40;
+    height: 5em;
+
+}
+
+section.R4 div
+{
+    width: 33.33%;
+    background-color: #cc00ff;
+    height: 5em;
+}
+section.R3, section.R4
+{
+    display: flex;
+}
+main
+{
+    display: grid;
+    grid-area: main;
+}
+
+
+    
+
+footer
+{
+    display: grid;
+    grid-area: footer;
+    background-color: #3F51B5;
+    height: 5em;
+    width: 100%;
+    text-align: center;
+}
