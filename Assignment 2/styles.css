@@ -1,0 +1,144 @@
+/* General styles */
+body {
+    font-family: 'Font1', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    margin: 0;
+    padding: 0;
+    color: white; /* Main font color */
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background: #333; /* Fallback color */
+    background: url('header.jpg') no-repeat center center, #333; /* Multi-layered background */
+    background-size: cover; /* Make the image cover the entire area */
+    color: white;
+}
+
+main {
+    padding: 20px;
+    background: url('images/header.jpg') no-repeat center center/cover, linear-gradient(to right, #ff7e5f, #feb47b); /* Multi-layered background */
+    background-size: cover;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2, section p {
+    color: #151515;
+    text-align: -webkit-center;
+    /* color: #151515; */
+
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensure the image maintains its aspect ratio */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="email"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Cool hover effect */
+}
+
+input[type="submit"]:hover {
+    background-color: #feb47b;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+div.history-box>h2
+{
+    color: #ccc;
+}
+
+div.history-box>p
+{
+    color: #ccc;
+}
+
+section
+{
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Cool hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #ff7e5f;
+    color: #fff;
+}
+
+/* Section boxes */
+.box {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.history-box {
+    background-color: #151515;
+}
+
+.products-box {
+    background-color: #e31a1a;
+}
+
+.recipes-box {
+    background-color: rgb(223, 100, 7);
+}
+
+section.home
+{
+    text-align: center;
+
+}
+
+header
+{
+    text-align: center;
+}
+
+/* SVG Icon */
+footer img {
+    width: 200px;
+    height: auto;
+    display: inline-block;
+}
